@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane alignment="center" hgap="10" prefHeight="318.0" prefWidth="427.0" vgap="10" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="308.0" prefWidth="387.0" GridPane.rowIndex="1">
+         <children>
+            <Label layoutX="124.0" layoutY="57.0" text="First Name:" />
+            <Label layoutX="124.0" layoutY="110.0" text="Last Name:" />
+            <Label layoutX="124.0" layoutY="164.0" text="Student Numbers:" />
+            <ImageView fitHeight="140.0" fitWidth="172.0" layoutX="25.0" layoutY="49.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/IMG_1703.JPG" />
+               </image>
+            </ImageView>
+            <Label layoutX="194.0" layoutY="57.0" text="Label" />
+            <Label layoutX="194.0" layoutY="110.0" text="Label" />
+            <Label layoutX="233.0" layoutY="164.0" text="Label" />
+            <Label layoutX="25.0" layoutY="201.0" text="Favorite Activities" />
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
