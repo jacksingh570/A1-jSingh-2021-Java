@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -17,20 +19,22 @@
       <RowConstraints />
    </rowConstraints>
    <children>
-      <AnchorPane prefHeight="308.0" prefWidth="387.0" GridPane.rowIndex="1">
+      <AnchorPane prefHeight="329.0" prefWidth="394.0" GridPane.rowIndex="1">
          <children>
-            <Label layoutX="124.0" layoutY="57.0" text="First Name:" />
-            <Label layoutX="124.0" layoutY="110.0" text="Last Name:" />
-            <Label layoutX="124.0" layoutY="164.0" text="Student Numbers:" />
-            <ImageView fitHeight="140.0" fitWidth="172.0" layoutX="25.0" layoutY="49.0" pickOnBounds="true" preserveRatio="true">
+            <Label fx:id="lblFName" layoutX="178.0" layoutY="74.0" text="First Name:" />
+            <Label fx:id="lblLName" layoutX="178.0" layoutY="111.0" text="Last Name:" />
+            <Label fx:id="lblSNumber" layoutX="178.0" layoutY="146.0" text="Student Numbers:" />
+            <ImageView fx:id="imgImage" fitHeight="140.0" fitWidth="172.0" layoutX="63.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../images/IMG_1703.JPG" />
                </image>
             </ImageView>
-            <Label layoutX="194.0" layoutY="57.0" text="Label" />
-            <Label layoutX="194.0" layoutY="110.0" text="Label" />
-            <Label layoutX="233.0" layoutY="164.0" text="Label" />
-            <Label layoutX="25.0" layoutY="201.0" text="Favorite Activities" />
+            <Label fx:id="txtLName" layoutX="248.0" layoutY="110.0" />
+            <Label fx:id="txtSNumber" layoutX="292.0" layoutY="146.0" />
+            <Label fx:id="lblFAcvivities" layoutX="63.0" layoutY="216.0" text="Favorite Activities:" />
+            <Label fx:id="txtFName" layoutX="248.0" layoutY="74.0" />
+            <ListView fx:id="lstFActivities" layoutX="178.0" layoutY="175.0" prefHeight="98.0" prefWidth="179.0" />
+            <Button fx:id="btnSStudent" layoutX="63.0" layoutY="240.0" mnemonicParsing="false" onAction="#showStudent" text=" Show Student " />
          </children>
       </AnchorPane>
    </children>

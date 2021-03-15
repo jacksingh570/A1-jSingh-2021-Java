@@ -28,7 +28,12 @@ public class student {
     }
 
     public void setfName(String fName) {
-        this.fName = fName;
+        if (fName.length() >= 2) {
+            this.fName = fName;
+            fName.toUpperCase();
+        }else{
+            throw new IllegalArgumentException("Your first name cannot be less then 2 letters");
+        }
     }
 
     public String getLName() {
@@ -36,7 +41,12 @@ public class student {
     }
 
     public void setLName(String LName) {
-        this.LName = LName;
+        if (LName.length() >= 2) {
+            this.LName = LName;
+            LName.toUpperCase();
+        }else{
+            throw new IllegalArgumentException("Your last name can't be less then 2 letters");
+        }
     }
 
     public int getsNumber() {
@@ -44,7 +54,10 @@ public class student {
     }
 
     public void setsNumber(int sNumber) {
-        this.sNumber = sNumber;
+        if (100000 < sNumber && sNumber < 9999999) {
+            this.sNumber = sNumber;
+        }
+        else throw new IllegalArgumentException("Student number must be between 1,000,000 and 9,999,999");
     }
 
     public String getfActivities() {

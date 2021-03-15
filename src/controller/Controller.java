@@ -53,8 +53,17 @@ public class Controller {
         txtSNumber.setText(Integer.toString(1141574));
         lstFActivities.getItems().add("Hockey");
         lstFActivities.getItems().add("Seeing Friends");
-        lstFActivities.getItems().add("Making Money");
-        lstFActivities.getItems().add("Sleeping");
+        lstFActivities.getItems().add("Sleep");
+    }
+
+    public void showStudent() {
+        txtFName.setText("Jack");
+        txtLName.setText("Singh");
+        txtSNumber.setText("1145174");
+        lstFActivities.getItems().add("Hockey");
+        lstFActivities.getItems().add("Seeing Friends");
+        lstFActivities.getItems().add("Skiing");
+        lstFActivities.getItems().add("Boxing");
     }
 
 }
